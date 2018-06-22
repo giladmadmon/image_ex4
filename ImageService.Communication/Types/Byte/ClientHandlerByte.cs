@@ -27,7 +27,7 @@ namespace ImageService.Communication {
         }
 
         /// <summary>
-        /// Sends the specified sender.
+        /// Sends the specified sender.  
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The <see cref="DataReceivedEventArgs"/> instance containing the event data.</param>
