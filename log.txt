@@ -1,0 +1,23 @@
+commit bbe031cc35d68b5f2524b42756e71d3faeda497c
+Author: Dafna Magid <dafna.magid@gmail.com>
+Date:   Fri Jun 22 05:48:31 2018 +0300
+
+    Done!
+
+commit 83c01b088bab994da5355f4bf9c06cac81ab011d
+Author: Dafna Magid <dafna.magid@gmail.com>
+Date:   Fri Jun 22 05:47:45 2018 +0300
+
+    Done!
+
+commit 0d4df43d15b9ecb6a732e13ab470e5455db1a1b1
+Author: Dafna Magid <dafna.magid@gmail.com>
+Date:   Fri Jun 22 05:46:28 2018 +0300
+
+    Almost Done!
+
+commit f62b3ceb955681209f7931b8e92bce3a9fd79044
+Author: Dafna Magid <dafna.magid@gmail.com>
+Date:   Fri Jun 22 05:43:10 2018 +0300
+
+    Init
