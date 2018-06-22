@@ -1,0 +1,10 @@
+﻿<Application x:Class="ImageService.GUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ImageService.GUI"
+            xmlns:converters="clr-namespace:ImageService.GUI.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <converters:ConnectedConverter x:Key="connectedConverter"/>
+    </Application.Resources>
+</Application>

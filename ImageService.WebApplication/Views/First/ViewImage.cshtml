@@ -1,0 +1,25 @@
+﻿@model Dictionary<String, String>
+
+@{
+    ViewBag.Title = "View Image";
+}
+<style>
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+
+    .center-fit {
+        max-width: 100%;
+        max-height: 60vh;
+        margin: auto;
+    }
+</style>
+
+<h3>View Image - "@Path.GetFileNameWithoutExtension(Model["image"])"</h3>
+
+<div class="imgbox">
+    <img src="~/@Model["path"]/@Model["image"]" class="center-fit" /> <br />
+</div>
+@Html.ActionLink("Back to Photos", "Photos", new { controller = "First" }, new { @class = "btn btn-warning btn-block", id = "BackButton" })
+

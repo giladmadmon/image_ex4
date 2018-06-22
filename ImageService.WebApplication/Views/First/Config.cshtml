@@ -1,0 +1,63 @@
+﻿@model ImageService.WebApplication.Models.Config
+
+@{
+    ViewBag.Title = "Config";
+}
+
+<h2>Configurations</h2>
+
+@using(Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.LogName)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.LogName)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.OutputDirPath)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.OutputDirPath)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.SourceName)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.SourceName)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ThumbnailSize)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.ThumbnailSize)
+                </td>
+            </tr>
+        </table>
+
+        <h3>Folders</h3>
+        @foreach(string folder in Model.Folders) {
+            <div style="margin-bottom:7px;">
+                @Html.ActionLink(@folder, "DeleteFolder", new { controller = "First", folder = @folder }, new { @class = "btn btn-default", style = "background-color: #dddddd;border-color: #dddddd;" })
+            </div>
+        }
+
+        <script>
+            function onFolderClick(elmnt) {
+                alert(elmnt.innerHTML);
+                location.href = "/First/DeleteFolder/folder=" + elmnt.innerHTML;
+            }
+        </script>
+
+    </div>
+}

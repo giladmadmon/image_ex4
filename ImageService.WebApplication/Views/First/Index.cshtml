@@ -1,0 +1,38 @@
+﻿@model ImageService.WebApplication.Models.ImageWeb
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Image Web Home Page</h2>
+Welcome to the best photos backup app ever created!!!
+we hope you will enjoy our service..
+<span style="font-size:15px ; float:right" class="label label-@(Model.Status?"success":"danger")">  @(Model.Status ? "service on" : "service off")</span>
+@if(Model.Status) {
+    <br /> <br />
+    <div>
+        Number of backed up photos:
+        @Model.PhotosAmount
+    </div>
+        <br /> <br />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(int i = 0; i < Model.Students.Count(); ++i) {
+                    <tr>
+                        <th scope="row">@(i + 1)</th>
+                        <td>@(Model.Students[i].FirstName)</td>
+                        <td>@(Model.Students[i].LastName)</td>
+                        <td>@(Model.Students[i].ID)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+}

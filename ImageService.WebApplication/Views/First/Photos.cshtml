@@ -1,0 +1,29 @@
+﻿@model ImageService.WebApplication.Models.Photos
+
+@{
+    ViewBag.Title = "Photos";
+}
+
+<h2>Photos - Preview</h2>
+
+<div class="container" id="tourpackages-carousel">
+
+    <div class="row">
+        @foreach(string photo in Model.AllPhotos) {
+            <div class="col-xs-18 col-sm-6 col-md-3" style="margin-bottom:10px;">
+                <div class="thumbnail">
+                    <img src="/@photo.Replace(Model.OutputDirPath,Model.ThumbnailsDirPath).Replace(Server.MapPath("~"),"").Replace("\\","/")" alt="Avatar" style="border-radius:50%;">
+                    <div class="caption">
+                        <h4>@Path.GetFileNameWithoutExtension(photo).Substring(0, Math.Min(15, Path.GetFileNameWithoutExtension(photo).Length))</h4>
+                        <p>Date: @Path.GetDirectoryName(photo).Replace(Model.OutputDirPath, "").Substring(1).Split('\\')[1].@Path.GetDirectoryName(photo).Replace(Model.OutputDirPath, "").Substring(1).Split('\\')[0]</p>
+                        <p>
+                            @Html.ActionLink("View", "ViewImage", new { controller = "First", path = @Path.GetDirectoryName(photo).Replace(Server.MapPath("~"), "").Replace("\\", "/"), image = @Path.GetFileName(photo) },
+                                    new { @class = "btn btn-primary btn-xs", style = "width : 45% ; float : left", role = "button" })
+                            @Html.ActionLink("Delete", "DeleteImage", new { controller = "First", image = @photo },
+                                    new { @class = "btn btn-danger btn-xs", style = "width : 45% ; float : right", role = "button" })
+                    </div>
+                </div>
+            </div>
+        }
+    </div><!-- End row -->
+</div><!-- End container -->

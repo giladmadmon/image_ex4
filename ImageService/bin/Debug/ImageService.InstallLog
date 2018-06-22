@@ -1,0 +1,113 @@
+﻿Installing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ImageService\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ImageService\ImageService\bin\Debug\ImageService.InstallLog
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ImageService\ImageService\bin\Debug\ImageService.exe
+Installing service ImageService...
+Service ImageService has been successfully installed.
+Creating EventLog source ImageService in log Application...
+Committing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ImageService\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ImageService\ImageService\bin\Debug\ImageService.InstallLog
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ImageService\ImageService\bin\Debug\ImageService.exe
+Installing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex2_2\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex2_2\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex2_2\ImageService\bin\Debug\ImageService.InstallLog
+Installing service ImageService...
+Service ImageService has been successfully installed.
+Creating EventLog source ImageService in log Application...
+Committing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex2_2\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex2_2\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex2_2\ImageService\bin\Debug\ImageService.InstallLog
+Installing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.InstallLog
+Installing service ImageService...
+Creating EventLog source ImageService in log Application...
+Rolling back assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.InstallLog
+Restoring event log to previous state for source ImageService.
+Installing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.InstallLog
+Installing service ImageService...
+Creating EventLog source ImageService in log Application...
+Rolling back assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.InstallLog
+Restoring event log to previous state for source ImageService.
+Installing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.InstallLog
+Installing service ImageService...
+Creating EventLog source ImageService in log Application...
+Rolling back assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.InstallLog
+Restoring event log to previous state for source ImageService.
+Installing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.InstallLog
+Installing service ImageService...
+Creating EventLog source ImageService in log Application...
+Rolling back assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.InstallLog
+Restoring event log to previous state for source ImageService.
+Installing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.InstallLog
+Installing service ImageService...
+Service ImageService has been successfully installed.
+Creating EventLog source ImageService in log Application...
+Committing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex3\ImageService\bin\Debug\ImageService.InstallLog
+Uninstalling assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex4\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex4\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex4\ImageService\bin\Debug\ImageService.InstallLog
+Removing EventLog source ImageService.
+Service ImageService is being removed from the system...
+Service ImageService was successfully removed from the system.
+Attempt to stop service ImageService.
+Installing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex4\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex4\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex4\ImageService\bin\Debug\ImageService.InstallLog
+Installing service ImageService...
+Service ImageService has been successfully installed.
+Creating EventLog source ImageService in log Application...
+Committing assembly 'C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex4\ImageService\bin\Debug\ImageService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex4\ImageService\bin\Debug\ImageService.exe
+   logfile = C:\Users\Gilad\Documents\Visual Studio 2015\Projects\Bar Ilan\Adv 2\ex4\ImageService\bin\Debug\ImageService.InstallLog

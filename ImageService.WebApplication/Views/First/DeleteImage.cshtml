@@ -1,0 +1,39 @@
+﻿@model Dictionary<String,String>
+
+@{
+    ViewBag.Title = "Delete confirmation";
+}
+
+<style>
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+
+    .center-fit {
+        max-width: 100%;
+        max-height: 40vh;
+        margin: auto;
+    }
+</style>
+
+<h3>Are you sure you want to delete the image - "@Path.GetFileNameWithoutExtension(Model["image"])"?</h3>
+
+<div class="imgbox">
+    <img src="~/@Model["image"].Replace(Server.MapPath("~"),"").Replace("\\","/")" class="center-fit" /> <br />
+</div>
+
+<button id="okButton" class="btn btn-success btn-block" onclick="deleteImage();">OK</button>
+<button id="cancelButton" class="btn btn-danger btn-block" onclick="location.href = '/First/Photos';">CANCEL</button>
+
+<script>
+    function deleteImage() {
+        document.getElementById("okButton").disabled = true;
+        document.getElementById("cancelButton").disabled = true;
+        $.post("/First/DeleteImage",
+            { image: "@Model["image"].Replace("\\","\\\\")" , confirm: true},
+            "json"
+        );
+        location.href = "/First/Photos";
+    }
+</script>

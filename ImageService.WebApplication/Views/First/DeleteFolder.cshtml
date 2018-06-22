@@ -1,0 +1,25 @@
+﻿@model String
+
+@{
+    ViewBag.Title = "Delete confirmation";
+}
+
+<h3>Are you sure you want to stop backing up the folder - "@(Model.Replace("\\\\", "\\"))"?</h3>
+
+<button id="okButton" class="btn btn-success btn-block" onclick="deleteFolder();">OK</button>
+<button id="cancelButton" class="btn btn-danger btn-block" onclick="location.href = '/First/Config';">CANCEL</button>
+<!--@Html.ActionLink("OK", "Delete", new { controller = "First", folder = Model, ok = 1 }, new { @class = "btn btn-success btn-block",onClick="alert(bla)" })
+@Html.ActionLink("CANCEL", "Config", new { controller = "First" }, new { @class = "btn btn-danger btn-block", id = "cancelButton" })
+-->
+
+<script>
+    function deleteFolder(folder) {
+        document.getElementById("okButton").disabled = true;
+        document.getElementById("cancelButton").disabled = true;
+        $.post("/First/DeleteFolder",
+            { folder: "@Model.Replace("\\","\\\\")" , confirm: true},
+            "json"
+        );
+        location.href = "/First/Config";
+    }
+</script>

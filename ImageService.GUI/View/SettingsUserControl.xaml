@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="ImageService.GUI.View.SettingsUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ImageService.GUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style x:Key ="Title">
+        <Setter Property="TextBlock.FontSize" Value = "20" />
+            <Setter Property="TextBlock.FontWeight" Value = "Bold" />
+            <Setter Property="TextBlock.Foreground" Value="Blue"/>
+            <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
+            <Setter Property="TextBlock.HorizontalAlignment" Value="Center"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="101" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label x:Name="SettingsLabel" Content="Settings" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Style="{StaticResource Title}"/>
+        <Label x:Name="OutputDiractoryLabel" Content="Output Diractory:" Margin="0" Grid.Row="1" RenderTransformOrigin="0,1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="LogNameLabel" Content="Log Name:" Margin="0" Grid.Row="3" RenderTransformOrigin="0,1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="SourceNameLabel" Content="Source Name:" Margin="0" Grid.Row="2" RenderTransformOrigin="0,1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="ThumbnailSizeLabel" Content="Thumbnail Size:" Margin="0" Grid.Row="4" RenderTransformOrigin="0,1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="OutputDiractoryPathLabel" Content="{Binding VM_OutputDirPath}" Margin="0" Grid.Row="1" RenderTransformOrigin="0,1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1"/>
+        <Label x:Name="SourceNamePathLabel" Content="{Binding VM_SourceName}" Margin="0" Grid.Row="2" RenderTransformOrigin="0,1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1"/>
+        <Label x:Name="LogNameDataLabel" Content="{Binding VM_LogName}" Margin="0" Grid.Row="3" RenderTransformOrigin="0,1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1"/>
+        <Label x:Name="ThumbnailSizeDataLabel" Content="{Binding VM_ThumbnailSize}" Margin="0" Grid.Row="4" RenderTransformOrigin="0,1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1"/>
+        <Button x:Name="RemoveButton" Command="{Binding RemoveCommand}" Grid.ColumnSpan="2" Content="Remove" Margin="0" Grid.Row="5" />
+        <ListBox x:Name="listBox" Background="Transparent" SelectedItem="{Binding VM_SelectedItem}" Grid.ColumnSpan="2" Margin="0" Grid.Row="6" ItemsSource="{Binding VM_Folders}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text= "{Binding}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

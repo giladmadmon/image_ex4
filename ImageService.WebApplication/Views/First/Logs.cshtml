@@ -1,0 +1,63 @@
+﻿@model ImageService.WebApplication.Models.Logs
+
+@{
+    ViewBag.Title = "Logs";
+}
+
+<h2>Logs Records</h2>
+
+<div style="float:right">
+    Logs type - enter INFO/WARNING/FAIL or none for all:<br>
+    <input type="text" id="filterInput" onkeyup="myFunction()" placeholder="Search for type">
+</div>
+
+
+
+<script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("filterInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("logMsgTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+</script>
+
+
+<table class="table" id="logMsgTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LogMessages[0].Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LogMessages[0].Message)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach(var item in Model.LogMessages) {
+        <tr>
+            <td style="color:@(item.Type.ToString().Equals("INFO")?"green":item.Type.ToString().Equals("FAIL")?"red":"yellow"); font-weight:bold;">
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+        </tr>
+    }
+
+</table>
